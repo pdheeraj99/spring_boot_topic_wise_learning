@@ -1,6 +1,6 @@
 package com.springboot.topic_wise_learning.customer;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Customer {
    private final Long id;
@@ -13,7 +13,7 @@ public class Customer {
 
    // Jakson library is returning JSON format based on this getters only
 
-   @JsonIgnore
+   @JsonProperty(value = "customer_id")
    public Long getId() {
       return id;
    }
