@@ -9,6 +9,8 @@ public class Customer {
       this.name = name;
    }
 
+   // Jakson library is returning JSON format based on this getters only
+
    public Long getId() {
       return id;
    }
